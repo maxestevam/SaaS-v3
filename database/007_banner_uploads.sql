@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS ld_banner_uploads (
+  id CHAR(36) PRIMARY KEY,
+  store_id CHAR(36) NOT NULL,
+  user_id CHAR(36) NOT NULL,
+  draft_id CHAR(36) NOT NULL,
+  breakpoint VARCHAR(10) NOT NULL,
+  storage_key VARCHAR(360) NOT NULL UNIQUE,
+  url VARCHAR(600) NOT NULL,
+  content_type VARCHAR(80) NOT NULL,
+  file_size INT NOT NULL,
+  width INT NOT NULL,
+  height INT NOT NULL,
+  crop_x DECIMAL(5,2) NOT NULL DEFAULT 50,
+  crop_y DECIMAL(5,2) NOT NULL DEFAULT 50,
+  crop_zoom DECIMAL(4,2) NOT NULL DEFAULT 1,
+  status VARCHAR(20) NOT NULL DEFAULT 'staged',
+  created_at BIGINT NOT NULL,
+  expires_at BIGINT NOT NULL,
+  attached_at BIGINT NULL,
+  CONSTRAINT ld_banner_uploads_store_fk FOREIGN KEY (store_id) REFERENCES ld_stores(id) ON DELETE CASCADE,
+  CONSTRAINT ld_banner_uploads_user_fk FOREIGN KEY (user_id) REFERENCES ld_users(id) ON DELETE CASCADE,
+  INDEX ld_banner_uploads_draft_idx (store_id, user_id, draft_id, status),
+  INDEX ld_banner_uploads_expiry_idx (status, expires_at)
+);
+

@@ -1,0 +1,133 @@
+/* Loja Descomplicada: superfície neutral, Inter e gradiente rosa-laranja para decisões principais. */
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ink: var(--foreground);
+  --color-cream: var(--background);
+  --color-marigold: #f59e0b;
+  --color-sage: #22c55e;
+  --color-brand-rose: #ff329d;
+  --color-brand-orange: #ff7a00;
+}
+
+:root {
+  --background: #fafafa;
+  --foreground: #171717;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --popover: #ffffff;
+  --popover-foreground: #171717;
+  --primary: #18181b;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #27272a;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #ff32b2;
+}
+
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #18181b;
+  --card-foreground: #fafafa;
+  --popover: #18181b;
+  --popover-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #18181b;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --border: #27272a;
+  --input: #3f3f46;
+  --ring: #ff32b2;
+}
+
+* { border-color: var(--border); }
+html { background: var(--background); }
+body { min-width: 320px; margin: 0; background: var(--background); color: var(--foreground); font-family: "Inter", ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+button, input, textarea { font: inherit; }
+button:not(:disabled), a[href] { cursor: pointer; }
+::selection { background: #ffd0ea; color: #18181b; }
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+.primary-gradient { background: linear-gradient(128deg, #ff329d 0%, #ff5363 52%, #ff7a00 100%); }
+.nav-primary-hover:hover { background: linear-gradient(128deg, #ff329d 0%, #ff5363 52%, #ff7a00 100%); color: #ffffff; }
+.brand-glow { box-shadow: 0 16px 38px rgba(255, 50, 157, 0.22); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-reveal { animation: page-reveal 280ms cubic-bezier(.23, 1, .32, 1) both; }
+  @keyframes page-reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+}
+
+@keyframes dashboard-alert-ticker {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-66%); }
+}
+
+.dashboard-alert-ticker { animation: dashboard-alert-ticker 32s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-alert-ticker { animation: none; padding-left: 1rem; }
+}
+
+[aria-label="Detalhes do cliente"] button {
+  gap: 0.2rem;
+  font-size: 0.48rem;
+}
+
+[aria-label="Detalhes do cliente"] button svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+[aria-label="Detalhes do cliente"] + section {
+  margin-top: 0.75rem;
+  row-gap: 0.9rem;
+}
+
+[aria-label="Detalhes do cliente"] + section > div {
+  gap: 0.75rem;
+}
+
+/* Rodapés finais dos editores em página: mantém a ação de salvar visível sem colidir com a navegação móvel. */
+form > .mt-auto.shrink-0.border-t.bg-card {
+  position: sticky;
+  bottom: calc(9.25rem + env(safe-area-inset-bottom));
+  z-index: 10;
+  margin: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--card) 95%, transparent);
+  box-shadow: 0 12px 28px rgba(24, 24, 27, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 640px) {
+  form > .mt-auto.shrink-0.border-t.bg-card { bottom: 0.75rem; margin: 1.5rem; }
+}

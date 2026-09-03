@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS ld_coupons (
+  id CHAR(36) PRIMARY KEY,
+  store_id CHAR(36) NOT NULL,
+  code VARCHAR(64) NOT NULL,
+  discount_type VARCHAR(20) NOT NULL,
+  percentage_off DECIMAL(5,2) NULL,
+  amount_off_cents INT NULL,
+  minimum_order_cents INT NOT NULL DEFAULT 0,
+  expires_at BIGINT NULL,
+  usage_limit INT NULL,
+  usage_count INT NOT NULL DEFAULT 0,
+  free_shipping_states JSON NOT NULL,
+  active TINYINT NOT NULL DEFAULT 1,
+  created_at BIGINT NOT NULL,
+  updated_at BIGINT NOT NULL,
+  CONSTRAINT ld_coupons_store_fk FOREIGN KEY (store_id) REFERENCES ld_stores(id) ON DELETE CASCADE,
+  UNIQUE KEY ld_coupons_store_code_uq (store_id, code),
+  INDEX ld_coupons_store_created_idx (store_id, created_at),
+  INDEX ld_coupons_store_active_idx (store_id, active)
+);

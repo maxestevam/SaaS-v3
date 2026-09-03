@@ -1,0 +1,33 @@
+import { Menu, Search, Store, X } from "lucide-react";
+import { Link, useLocation, useSearch } from "wouter";
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { applyPublicStoreMetadata } from "@/lib/public-store-metadata";
+import { publicStorePath } from "@/lib/public-store-url";
+
+export function PublicStoreShell({ shell, children }) {
+  return <div className="storefront"><PublicHeader shell={shell} /><main>{children}</main><PublicFooter shell={shell} /></div>;
+}
+
+function PublicHeader({ shell }) {
+  const [location, navigate] = useLocation();
+  const currentSearch = useSearch();
+  const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState(() => new URLSearchParams(currentSearch).get("q") || "");
+  const base = publicStorePath(shell.store.slug);
+  useEffect(() => setSearch(new URLSearchParams(currentSearch).get("q") || ""), [currentSearch]);
+  const submitSearch = (event) => { event.preventDefault(); const query = search.trim(); navigate(`${base}/busca${query ? `?q=${encodeURIComponent(query)}` : ""}`); setOpen(false); };
+  return <header className="sticky top-0 z-30 border-b border-[var(--store-border)] bg-[color:var(--store-background)]/95 backdrop-blur"><div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6"><Link href={base} className="flex min-w-0 items-center gap-2 font-semibold" aria-label={`Início da ${shell.store.name}`}>{shell.store.logoUrl ? <img src={shell.store.logoUrl} alt="" className="size-9 rounded-lg object-cover" /> : <span className="grid size-9 place-items-center rounded-lg bg-[var(--store-primary)] text-[var(--store-primary-foreground)]"><Store className="size-5" /></span>}<span className="truncate">{shell.store.name}</span></Link><nav className="ml-5 hidden items-center gap-5 text-sm text-[var(--store-muted)] lg:flex"><Link href={base} className="hover:text-[var(--store-primary)]">Início</Link>{shell.categories.slice(0, 5).map((category) => <Link key={category.id} href={`${base}/categoria/${category.slug}`} className="hover:text-[var(--store-primary)]">{category.name}</Link>)}</nav><form className="ml-auto hidden max-w-xs flex-1 md:block" onSubmit={submitSearch}><label className="relative block"><Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-[var(--store-muted)]" /><input value={search} onChange={(event) => setSearch(event.target.value)} className="h-10 w-full rounded-full border border-[var(--store-border)] bg-[var(--store-surface)] pl-9 pr-3 text-sm text-[var(--store-text)] outline-none focus:border-[var(--store-primary)]" placeholder="Buscar produtos" aria-label="Buscar produtos" /></label></form><Button variant="ghost" size="icon" className="ml-auto lg:hidden" onClick={() => setOpen((value) => !value)} aria-label={open ? "Fechar navegação" : "Abrir navegação"}>{open ? <X /> : <Menu />}</Button></div>{open && <div className="border-t border-[var(--store-border)] bg-[var(--store-background)] px-4 py-4 lg:hidden"><form onSubmit={submitSearch}><input value={search} onChange={(event) => setSearch(event.target.value)} className="h-10 w-full rounded-lg border border-[var(--store-border)] bg-[var(--store-surface)] px-3 text-sm text-[var(--store-text)]" placeholder="Buscar produtos" aria-label="Buscar produtos" /></form><nav className="mt-4 grid gap-1"><Link href={base} onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm hover:bg-[var(--store-surface)]">Início</Link>{shell.categories.map((category) => <Link key={category.id} href={`${base}/categoria/${category.slug}`} onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm hover:bg-[var(--store-surface)]">{category.name}</Link>)}</nav></div>}</header>;
+}
+
+function PublicFooter({ shell }) {
+  const base = publicStorePath(shell.store.slug);
+  const social = Object.entries(shell.store.social || {}).filter(([, value]) => Boolean(value));
+  const commercial = shell.commercial || { freeShippingMinLabel: null, paymentMethods: [], shippingMethods: [] };
+  return <footer className="mt-16 border-t border-[var(--store-border)] bg-[var(--store-surface)]"><div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.5fr_1fr_1fr]"><section><p className="font-semibold">{shell.store.name}</p>{shell.store.description && <p className="mt-2 max-w-md text-sm leading-6 text-[var(--store-muted)]">{shell.store.description}</p>}{commercial.freeShippingMinLabel && <p className="mt-3 text-sm text-[var(--store-muted)]">Frete grátis a partir de <strong>{commercial.freeShippingMinLabel}</strong>.</p>}{shell.store.contact.whatsapp && <a className="mt-3 inline-block text-sm font-medium text-[var(--store-primary)]" href={`https://wa.me/${shell.store.contact.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noreferrer">Falar no WhatsApp</a>}</section><section><p className="text-sm font-semibold">Categorias</p><div className="mt-3 grid gap-2">{shell.categories.slice(0, 6).map((category) => <Link key={category.id} href={`${base}/categoria/${category.slug}`} className="text-sm text-[var(--store-muted)] hover:text-[var(--store-primary)]">{category.name}</Link>)}</div></section><section>{commercial.paymentMethods.length > 0 && <><p className="text-sm font-semibold">Pagamento</p><div className="mt-3 grid gap-2">{commercial.paymentMethods.map((method) => <p key={method.id} className="text-sm text-[var(--store-muted)]">{method.name}{method.maxInstallments ? ` · até ${method.maxInstallments}x` : ""}</p>)}</div></>}{shell.store.pages.length > 0 && <div className="mt-5"><p className="text-sm font-semibold">Institucional</p><div className="mt-3 grid gap-2">{shell.store.pages.map((page) => <Link key={page.id} href={`${base}/pagina/${page.slug}`} className="text-sm text-[var(--store-muted)] hover:text-[var(--store-primary)]">{page.title}</Link>)}</div></div>}{social.length > 0 && <div className="mt-5 flex flex-wrap gap-3">{social.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer" className="text-sm capitalize text-[var(--store-muted)] hover:text-[var(--store-primary)]">{name}</a>)}</div>}</section></div></footer>;
+}
+
+export function useStoreMetadata(shell, page = {}) {
+  const locationKey = typeof window === "undefined" ? "" : `${window.location.pathname}${window.location.search}`;
+  useEffect(() => applyPublicStoreMetadata(shell, page), [locationKey, page.seo?.description, page.seo?.ogImageUrl, page.seo?.title, page.title, shell.store.description, shell.store.faviconUrl, shell.store.logoUrl, shell.store.name, shell.store.seo.description, shell.store.seo.ogImageUrl, shell.store.seo.title, shell.store.slug]);
+}

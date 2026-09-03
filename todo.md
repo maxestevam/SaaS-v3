@@ -1,0 +1,89 @@
+# Project TODO
+
+- [x] Preservar integralmente o código, design, textos, interações e regras de backend do arquivo enviado.
+- [x] Transferir a cópia exata do projeto enviado para o ambiente de implantação.
+- [x] Configurar com segurança os parâmetros de produção de e-mail, pagamentos, armazenamento e autenticação fornecidos.
+- [x] Executar a compilação de produção após a recuperação mínima autorizada dos arquivos ausentes.
+- [x] Validar localmente os endpoints essenciais sem criar, alterar ou remover dados.
+- [x] Salvar uma versão pronta para publicação e orientar a ativação pública.
+- [x] Validar o acesso R2 em modo somente-leitura, sem criar, editar ou remover mídias.
+- [x] Validar que a autenticação Google esteja habilitada pelo endpoint existente.
+- [x] Tratar a ausência dos arquivos referenciados pelo código por recuperação mínima compatível, preservando o projeto recebido.
+- [x] Auditar o arquivo reenviado e consolidar a cópia de implantação com os artefatos recuperados necessários para a compilação.
+- [x] Validar o fluxo de cartão do componente de pagamento recuperado com um teste isolado do SDK e do contrato existente.
+- [x] Executar uma validação visual e funcional adicional da vitrine pública e do painel de pagamento recuperados.
+- [x] Validar a URL pública final e os endpoints essenciais após a ativação manual da publicação.
+- [x] Capturar e revisar visualmente a vitrine pública e o painel de pagamento recuperados em uma rota temporária de verificação: vitrine renderizada, painel Pix visível e layout sem regressões aparentes.
+- [x] Repetir o salvamento da versão após sincronizar a divergência remota detectada.
+- [x] Auditar o painel administrativo enviado e definir a integração mais segura na rota /admin.
+- [x] Integrar o painel administrativo em /admin sem interromper as rotas públicas existentes.
+- [x] Conectar o painel aos contratos de autenticação e administração já disponibilizados pelo backend.
+- [x] Validar localmente as rotas públicas e administrativas no artefato de produção.
+- [x] Salvar e publicar a versão que inclui o acesso administrativo em /admin.
+- [x] Validar no domínio Manus as rotas /, /admin/ e o contrato protegido /api/admin/auth/me após a publicação.
+- [x] Auditar os dados, rotas e componentes existentes necessários para ampliar a administração.
+- [x] Criar gestão administrativa completa de planos: criação, edição, ativação, desativação e exclusão segura.
+- [x] Criar gestão de lojistas: criação, edição, identificação de função, bloqueio, banimento, exclusão e redefinição segura de senha por e-mail.
+- [x] Criar listagem operacional de lojas com proprietário, situação, ativação, métricas de catálogo, clientes, pedidos, vendas e consumo de mídia.
+- [x] Criar indicadores consolidados de lojistas e lojas para suporte e operação.
+- [x] Registrar atividades relevantes de lojistas e a presença recente no painel.
+- [x] Implementar sessões de suporte com consentimento explícito, escopo limitado e auditoria de acesso.
+- [x] Ampliar as telas administrativas para os novos fluxos sem expor senhas, tokens ou dados sensíveis.
+- [x] Cobrir as novas regras por testes, compilar e validar os fluxos administrativos e públicos.
+- [x] Salvar e publicar a atualização do painel administrativo.
+- [x] Corrigir o bloqueio de lojista pela interface e validar a ação de bloqueio e reativação.
+- [x] Registrar em auditoria cada abertura administrativa de uma sessão de suporte ativa.
+- [x] Estabilizar e executar a suíte de testes relevante sem falhas pendentes da configuração de ambiente.
+- [x] Cobrir por teste de contrato os estados blocked e active no controle de acesso de lojistas.
+- [x] Diagnosticar a falha genérica retornada pelas rotas da API administrativa.
+- [x] Corrigir as consultas e os contratos das rotas administrativas sem alterar dados existentes.
+- [x] Cobrir por testes o dashboard e as rotas administrativas corrigidas.
+- [x] Publicar e validar em produção a correção das APIs administrativas.
+- [x] Auditar a sessão de suporte existente e definir os limites de privacidade das capturas visuais.
+- [x] Criar transmissão de capturas de tela sob demanda, somente durante consentimento ativo do lojista.
+- [x] Garantir que campos sensíveis e credenciais não sejam incluídos nas capturas de suporte.
+- [x] Exibir as capturas em tempo real no painel administrativo apenas para a sessão de suporte autorizada.
+- [x] Testar consentimento, expiração, revogação e ausência de tráfego visual fora de sessões ativas.
+- [x] Cobrir o acesso administrativo negado ao frame sem consentimento visual ativo.
+- [x] Registrar que o suporte visual foi publicado e validado parcialmente antes de ser removido integralmente a pedido do usuário.
+- [x] Validar autenticadamente em produção o dashboard administrativo e o ciclo visual isolado, sem operar contas, planos ou pagamentos reais.
+- [x] Corrigir o retorno de frame indisponível após o encerramento para que responda 404, não 500.
+- [x] Registrar que a validação automática em produção do SupportConsentBanner foi cancelada por mudança de escopo antes da conclusão.
+- [x] Remover do frontend, backend, testes, dependências e banco de dados o recurso de visualização de tela do suporte.
+- [x] Bloquear o fallback de interface para endpoints de API removidos: 404 JSON em caminhos administrativos e 401 JSON em caminhos autenticados de lojista.
+- [x] Reorganizar a interface administrativa com padrões visuais mais consistentes e profissionais.
+- [x] Aplicar máscaras a valores monetários e CEP em todos os formulários administrativos pertinentes.
+- [x] Substituir checkboxes de configuração por switches acessíveis do conjunto de componentes existente.
+- [x] Implementar modais roteáveis para criação e atualização nas páginas administrativas.
+- [x] Paginar os 10 eventos recentes do dashboard administrativo.
+- [x] Paginar todas as listagens administrativas de dados e registros.
+- [x] Cobrir as alterações administrativas por testes e validar os fluxos relevantes no navegador.
+- [x] Validar no navegador publicado o modal e a paginação de Lojistas, uma listagem paginada adicional e o dashboard com dez eventos por página.
+- [x] Revalidar autenticadamente no navegador a página de Suporte sem controles de visualização de tela.
+- [x] Corrigir a falha do dashboard administrativo introduzida na paginação de eventos recentes.
+- [x] Ocultar da interface de atividades os registros históricos exclusivos da visualização de tela removida.
+- [x] Publicar e validar em produção a atualização administrativa solicitada.
+- [x] Revalidar no domínio publicado que Dashboard e Atividades não renderizam eventos /visual-consent, support_visual_* ou /frame.
+- [x] Remover do painel administrativo a área de suporte consentido e suas referências de navegação, API e auditoria operacional.
+- [x] Permitir definir dias de trial em convites de novos lojistas e comunicar o período gratuito no e-mail de convite.
+- [x] Permitir adicionar e enviar múltiplos convites de lojistas em uma única ação administrativa, com tratamento individual de falhas.
+- [x] Permitir abrir a loja pela coluna de loja e proprietário da listagem administrativa de Lojas.
+- [x] Exibir em modal roteável o perfil completo do lojista e suas lojas em seções recolhíveis.
+- [x] Criar persistência configurável de limites por plano, incluindo teto customizável do modo ilimitado.
+- [x] Permitir configurar limites de catálogo, clientes, cupons, banners e mídia de produtos e banners ao criar ou editar planos.
+- [x] Aplicar os limites de plano no backend e no painel do lojista sem alterar o design existente deste painel.
+- [x] Cobrir por testes os limites, convites múltiplos, detalhes de lojista e remoção do suporte.
+- [x] Publicar e validar em produção as novas operações administrativas e as regras de limite.
+- [x] Executar a suíte e o build após remover integralmente o suporte, corrigindo regressões de imports e rotas removidas.
+- [x] Validar em navegador publicado que o menu administrativo não exibe Suporte e que os endpoints removidos respondem 404 JSON sem fallback de interface.
+- [x] Exibir no modal de detalhes do lojista todos os campos de perfil não sensíveis já retornados pela API, incluindo função, datas, onboarding e motivo de bloqueio ou banimento.
+- [x] Aplicar quota também ao mover uma categoria entre raiz e subcategoria durante a edição, impedindo contorno dos limites de plano.
+- [x] Expor limites e consumo atuais por loja no contrato do painel do lojista, inclusive para lojas já criadas, sem alterar sua estrutura visual.
+- [x] Exibir no modal de detalhes do lojista as datas não sensíveis de envio e de consumo do convite de trial.
+- [x] Validar em produção, mediante autorização, a persistência de um plano com limites e o bloqueio de uma quota no limite efetivo sem disparar convites reais.
+- [x] Capturar em produção a resposta HTTP e a mensagem explícita de bloqueio ao exceder uma quota configurada, removendo em seguida todo dado temporário criado no teste.
+- [x] Substituir os contadores fixos de fotos e vídeos em `/products/create` pelos limites efetivos do plano da loja.
+- [x] Comparar a referência enviada com as páginas atuais de Banners e Cupons e repor somente os recursos ausentes, sem alterar o design ou fluxos já presentes.
+- [x] Cobrir os ajustes de quota e as páginas repostas por testes de regressão, validar visualmente e publicar sem alterações excedentes.
+- [x] Validar visualmente, com sessão autenticada no domínio publicado, os limites efetivos em `/products/create` e as páginas base `/banners` e `/coupons`.
+- [x] Registrar a confirmação visual publicada das três páginas corrigidas sem criar, editar ou remover dados.

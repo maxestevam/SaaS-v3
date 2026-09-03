@@ -1,0 +1,1630 @@
+{
+  "store": {
+    "id": "loja-glamour-123",
+    "name": "Glamour Store",
+    "slug": "glamour-store",
+    "description": "A melhor loja de moda feminina com as últimas tendências. Encontre vestidos, blusas, calças e acessórios com preços incríveis e qualidade premium.",
+    "logo": "https://placehold.co/200x60/15173D/FFFFFF?text=GLAMOUR",
+    "favicon": "https://placehold.co/32x32/15173D/FFFFFF?text=G",
+    "status": "active",
+    "maintenance": false,
+    "maintenanceMessage": "Estamos em manutenção. Voltamos em breve!",
+    "currency": "BRL",
+    "currencySymbol": "R$",
+    "locale": "pt-BR",
+    "timezone": "America/Sao_Paulo",
+    "contact": {
+      "email": "contato@glamourstore.com.br",
+      "phone": "(11) 99999-9999",
+      "whatsapp": "5511999999999",
+      "address": {
+        "street": "Rua das Flores, 123",
+        "neighborhood": "Centro",
+        "city": "São Paulo",
+        "state": "SP",
+        "zipCode": "01234-567",
+        "country": "Brasil"
+      }
+    },
+    "social": {
+      "instagram": "https://instagram.com/glamourstore",
+      "facebook": "https://facebook.com/glamourstore",
+      "tiktok": "https://tiktok.com/@glamourstore",
+      "youtube": "https://youtube.com/glamourstore",
+      "pinterest": "https://pinterest.com/glamourstore",
+      "twitter": "https://twitter.com/glamourstore"
+    },
+    "seo": {
+      "title": "Glamour Store - Moda Feminina Online",
+      "description": "Loja de moda feminina com vestidos, blusas, calças e acessórios. Frete grátis acima de R$ 299. Parcelamento em até 10x sem juros.",
+      "keywords": [
+        "moda feminina",
+        "vestidos",
+        "blusas",
+        "roupas femininas",
+        "loja online"
+      ],
+      "ogImage": "https://placehold.co/1200x630/15173D/FFFFFF?text=Glamour+Store"
+    },
+    "settings": {
+      "freeShippingMinValue": 299,
+      "maxInstallments": 10,
+      "minInstallmentValue": 30,
+      "showPriceFrom": true,
+      "showStock": true,
+      "showSoldCount": false,
+      "allowGuestCheckout": true,
+      "requireCpf": true,
+      "requirePhone": true
+    },
+    "paymentMethods": [
+      {
+        "id": "credit_card",
+        "name": "Cartão de Crédito",
+        "icon": "credit-card",
+        "enabled": true,
+        "installments": 10,
+        "minInstallmentValue": 30
+      },
+      {
+        "id": "pix",
+        "name": "Pix",
+        "icon": "qr-code",
+        "enabled": true,
+        "discount": 10
+      },
+      {
+        "id": "boleto",
+        "name": "Boleto Bancário",
+        "icon": "barcode",
+        "enabled": true,
+        "discount": 5,
+        "daysToExpire": 3
+      },
+      {
+        "id": "debit_card",
+        "name": "Cartão de Débito",
+        "icon": "credit-card",
+        "enabled": true
+      }
+    ],
+    "shippingMethods": [
+      {
+        "id": "correios_pac",
+        "name": "PAC - Correios",
+        "description": "Entrega econômica",
+        "minDays": 5,
+        "maxDays": 12,
+        "enabled": true
+      },
+      {
+        "id": "correios_sedex",
+        "name": "SEDEX - Correios",
+        "description": "Entrega expressa",
+        "minDays": 1,
+        "maxDays": 3,
+        "enabled": true
+      },
+      {
+        "id": "retirada",
+        "name": "Retirada na Loja",
+        "description": "Retire grátis em nossa loja",
+        "minDays": 0,
+        "maxDays": 0,
+        "price": 0,
+        "enabled": true
+      }
+    ],
+    "template": "default",
+    "theme": {
+      "primaryColor": "#15173D",
+      "secondaryColor": "#FCE4EC",
+      "accentColor": "#982598",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#212121",
+      "fontFamily": "Inter"
+    }
+  },
+  "banners": [
+    {
+      "id": "banner-1",
+      "title": "Nova Coleção Verão 2024",
+      "subtitle": "Até 50% OFF em peças selecionadas",
+      "image": "https://placehold.co/1920x600/15173D/FFFFFF?text=Nova+Colecao+Verao",
+      "imageMobile": "https://placehold.co/800x800/15173D/FFFFFF?text=Verao",
+      "link": "/categoria/verao",
+      "buttonText": "Comprar Agora",
+      "position": 1,
+      "active": true
+    },
+    {
+      "id": "banner-2",
+      "title": "Frete Grátis",
+      "subtitle": "Em compras acima de R$ 299",
+      "image": "https://placehold.co/1920x600/9C27B0/FFFFFF?text=Frete+Gratis",
+      "imageMobile": "https://placehold.co/800x800/9C27B0/FFFFFF?text=Frete+Gratis",
+      "link": "/produtos",
+      "buttonText": "Ver Produtos",
+      "position": 2,
+      "active": true
+    },
+    {
+      "id": "banner-3",
+      "title": "Outlet de Inverno",
+      "subtitle": "Peças a partir de R$ 39,90",
+      "image": "https://placehold.co/1920x600/3F51B5/FFFFFF?text=Outlet+Inverno",
+      "imageMobile": "https://placehold.co/800x800/3F51B5/FFFFFF?text=Outlet",
+      "link": "/categoria/outlet",
+      "buttonText": "Aproveitar",
+      "position": 3,
+      "active": true
+    }
+  ],
+  "miniBanners": [
+    {
+      "id": "mini-1",
+      "title": "Vestidos",
+      "image": "https://placehold.co/400x200/15173D/FFFFFF?text=Vestidos",
+      "link": "/categoria/vestidos",
+      "active": true
+    },
+    {
+      "id": "mini-2",
+      "title": "Blusas",
+      "image": "https://placehold.co/400x200/9C27B0/FFFFFF?text=Blusas",
+      "link": "/categoria/blusas",
+      "active": true
+    },
+    {
+      "id": "mini-3",
+      "title": "Calças",
+      "image": "https://placehold.co/400x200/673AB7/FFFFFF?text=Calcas",
+      "link": "/categoria/calcas",
+      "active": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Vestidos",
+      "slug": "vestidos",
+      "description": "Os mais belos vestidos para todas as ocasiões",
+      "image": "https://placehold.co/400x400/15173D/FFFFFF?text=Vestidos",
+      "banner": "https://placehold.co/1920x400/15173D/FFFFFF?text=Vestidos",
+      "parentId": null,
+      "position": 1,
+      "active": true,
+      "productCount": 45,
+      "subcategories": [
+        {
+          "id": "subcat-1-1",
+          "name": "Vestidos Longos",
+          "slug": "vestidos-longos",
+          "parentId": "cat-1",
+          "position": 1,
+          "active": true,
+          "productCount": 18
+        },
+        {
+          "id": "subcat-1-2",
+          "name": "Vestidos Curtos",
+          "slug": "vestidos-curtos",
+          "parentId": "cat-1",
+          "position": 2,
+          "active": true,
+          "productCount": 22
+        },
+        {
+          "id": "subcat-1-3",
+          "name": "Vestidos de Festa",
+          "slug": "vestidos-festa",
+          "parentId": "cat-1",
+          "position": 3,
+          "active": true,
+          "productCount": 5
+        }
+      ]
+    },
+    {
+      "id": "cat-2",
+      "name": "Blusas",
+      "slug": "blusas",
+      "description": "Blusas elegantes e confortáveis",
+      "image": "https://placehold.co/400x400/9C27B0/FFFFFF?text=Blusas",
+      "banner": "https://placehold.co/1920x400/9C27B0/FFFFFF?text=Blusas",
+      "parentId": null,
+      "position": 2,
+      "active": true,
+      "productCount": 38,
+      "subcategories": [
+        {
+          "id": "subcat-2-1",
+          "name": "Blusas de Manga Longa",
+          "slug": "blusas-manga-longa",
+          "parentId": "cat-2",
+          "position": 1,
+          "active": true,
+          "productCount": 15
+        },
+        {
+          "id": "subcat-2-2",
+          "name": "Regatas",
+          "slug": "regatas",
+          "parentId": "cat-2",
+          "position": 2,
+          "active": true,
+          "productCount": 12
+        },
+        {
+          "id": "subcat-2-3",
+          "name": "Camisetas",
+          "slug": "camisetas",
+          "parentId": "cat-2",
+          "position": 3,
+          "active": true,
+          "productCount": 11
+        }
+      ]
+    },
+    {
+      "id": "cat-3",
+      "name": "Calças",
+      "slug": "calcas",
+      "description": "Calças para todos os estilos",
+      "image": "https://placehold.co/400x400/673AB7/FFFFFF?text=Calcas",
+      "banner": "https://placehold.co/1920x400/673AB7/FFFFFF?text=Calcas",
+      "parentId": null,
+      "position": 3,
+      "active": true,
+      "productCount": 25,
+      "subcategories": []
+    },
+    {
+      "id": "cat-4",
+      "name": "Saias",
+      "slug": "saias",
+      "description": "Saias modernas e femininas",
+      "image": "https://placehold.co/400x400/3F51B5/FFFFFF?text=Saias",
+      "banner": "https://placehold.co/1920x400/3F51B5/FFFFFF?text=Saias",
+      "parentId": null,
+      "position": 4,
+      "active": true,
+      "productCount": 18,
+      "subcategories": []
+    },
+    {
+      "id": "cat-5",
+      "name": "Conjuntos",
+      "slug": "conjuntos",
+      "description": "Conjuntos práticos e estilosos",
+      "image": "https://placehold.co/400x400/2196F3/FFFFFF?text=Conjuntos",
+      "banner": "https://placehold.co/1920x400/2196F3/FFFFFF?text=Conjuntos",
+      "parentId": null,
+      "position": 5,
+      "active": true,
+      "productCount": 15,
+      "subcategories": []
+    },
+    {
+      "id": "cat-6",
+      "name": "Acessórios",
+      "slug": "acessorios",
+      "description": "Acessórios para completar seu look",
+      "image": "https://placehold.co/400x400/00BCD4/FFFFFF?text=Acessorios",
+      "banner": "https://placehold.co/1920x400/00BCD4/FFFFFF?text=Acessorios",
+      "parentId": null,
+      "position": 6,
+      "active": true,
+      "productCount": 30,
+      "subcategories": [
+        {
+          "id": "subcat-6-1",
+          "name": "Bolsas",
+          "slug": "bolsas",
+          "parentId": "cat-6",
+          "position": 1,
+          "active": true,
+          "productCount": 12
+        },
+        {
+          "id": "subcat-6-2",
+          "name": "Bijuterias",
+          "slug": "bijuterias",
+          "parentId": "cat-6",
+          "position": 2,
+          "active": true,
+          "productCount": 18
+        }
+      ]
+    },
+    {
+      "id": "cat-7",
+      "name": "Outlet",
+      "slug": "outlet",
+      "description": "Ofertas imperdíveis com descontos especiais",
+      "image": "https://placehold.co/400x400/FF5722/FFFFFF?text=Outlet",
+      "banner": "https://placehold.co/1920x400/FF5722/FFFFFF?text=Outlet",
+      "parentId": null,
+      "position": 7,
+      "active": true,
+      "productCount": 50,
+      "subcategories": []
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "sku": "VES-001-FLORAL",
+      "name": "Vestido Longo Floral Primavera",
+      "slug": "vestido-longo-floral-primavera",
+      "description": "Vestido longo com estampa floral delicada, perfeito para ocasiões especiais. Tecido leve e confortável, ideal para dias quentes.",
+      "shortDescription": "Vestido longo floral com tecido leve",
+      "price": 299.9,
+      "priceFrom": 399.9,
+      "costPrice": 120.0,
+      "images": [
+        "https://placehold.co/800x1000/15173D/FFFFFF?text=Vestido+Floral+1",
+        "https://placehold.co/800x1000/15173D/FFFFFF?text=Vestido+Floral+2",
+        "https://placehold.co/800x1000/15173D/FFFFFF?text=Vestido+Floral+3",
+        "https://placehold.co/800x1000/15173D/FFFFFF?text=Vestido+Floral+4"
+      ],
+      "thumbnail": "https://placehold.co/400x500/15173D/FFFFFF?text=Vestido+Floral",
+      "categoryId": "cat-1",
+      "categorySlug": "vestidos",
+      "subcategoryId": "subcat-1-1",
+      "brand": "Glamour",
+      "tags": ["vestido", "floral", "longo", "primavera", "festa"],
+      "featured": true,
+      "isNew": true,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 25,
+      "weight": 0.3,
+      "dimensions": {
+        "width": 30,
+        "height": 40,
+        "depth": 5
+      },
+      "variants": [
+        {
+          "id": "var-1-1",
+          "name": "P - Rosa",
+          "sku": "VES-001-P-ROSA",
+          "price": 299.9,
+          "stock": 8,
+          "attributes": {
+            "size": "P",
+            "color": "Rosa"
+          }
+        },
+        {
+          "id": "var-1-2",
+          "name": "M - Rosa",
+          "sku": "VES-001-M-ROSA",
+          "price": 299.9,
+          "stock": 10,
+          "attributes": {
+            "size": "M",
+            "color": "Rosa"
+          }
+        },
+        {
+          "id": "var-1-3",
+          "name": "G - Rosa",
+          "sku": "VES-001-G-ROSA",
+          "price": 299.9,
+          "stock": 5,
+          "attributes": {
+            "size": "G",
+            "color": "Rosa"
+          }
+        },
+        {
+          "id": "var-1-4",
+          "name": "GG - Rosa",
+          "sku": "VES-001-GG-ROSA",
+          "price": 299.9,
+          "stock": 2,
+          "attributes": {
+            "size": "GG",
+            "color": "Rosa"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G", "GG"],
+        "colors": ["Rosa"],
+        "material": "Viscose",
+        "composition": "100% Viscose"
+      },
+      "seo": {
+        "title": "Vestido Longo Floral Primavera | Glamour Store",
+        "description": "Compre o Vestido Longo Floral Primavera. Tecido leve e confortável. Parcele em até 10x sem juros.",
+        "keywords": ["vestido longo", "vestido floral", "vestido primavera"]
+      },
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-20T15:30:00Z"
+    },
+    {
+      "id": "prod-2",
+      "sku": "BLU-001-SEDA",
+      "name": "Blusa de Seda Premium",
+      "slug": "blusa-seda-premium",
+      "description": "Blusa de seda premium com acabamento sofisticado. Ideal para o trabalho ou ocasiões especiais. Caimento impecável.",
+      "shortDescription": "Blusa de seda com acabamento premium",
+      "price": 189.9,
+      "priceFrom": null,
+      "costPrice": 75.0,
+      "images": [
+        "https://placehold.co/800x1000/9C27B0/FFFFFF?text=Blusa+Seda+1",
+        "https://placehold.co/800x1000/9C27B0/FFFFFF?text=Blusa+Seda+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/9C27B0/FFFFFF?text=Blusa+Seda",
+      "categoryId": "cat-2",
+      "categorySlug": "blusas",
+      "subcategoryId": null,
+      "brand": "Glamour",
+      "tags": ["blusa", "seda", "premium", "trabalho"],
+      "featured": true,
+      "isNew": false,
+      "isBestSeller": true,
+      "active": true,
+      "stock": 42,
+      "weight": 0.15,
+      "dimensions": {
+        "width": 25,
+        "height": 30,
+        "depth": 3
+      },
+      "variants": [
+        {
+          "id": "var-2-1",
+          "name": "P - Branco",
+          "sku": "BLU-001-P-BRA",
+          "price": 189.9,
+          "stock": 10,
+          "attributes": {
+            "size": "P",
+            "color": "Branco"
+          }
+        },
+        {
+          "id": "var-2-2",
+          "name": "M - Branco",
+          "sku": "BLU-001-M-BRA",
+          "price": 189.9,
+          "stock": 12,
+          "attributes": {
+            "size": "M",
+            "color": "Branco"
+          }
+        },
+        {
+          "id": "var-2-3",
+          "name": "G - Branco",
+          "sku": "BLU-001-G-BRA",
+          "price": 189.9,
+          "stock": 8,
+          "attributes": {
+            "size": "G",
+            "color": "Branco"
+          }
+        },
+        {
+          "id": "var-2-4",
+          "name": "P - Preto",
+          "sku": "BLU-001-P-PRE",
+          "price": 189.9,
+          "stock": 6,
+          "attributes": {
+            "size": "P",
+            "color": "Preto"
+          }
+        },
+        {
+          "id": "var-2-5",
+          "name": "M - Preto",
+          "sku": "BLU-001-M-PRE",
+          "price": 189.9,
+          "stock": 6,
+          "attributes": {
+            "size": "M",
+            "color": "Preto"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G"],
+        "colors": ["Branco", "Preto"],
+        "material": "Seda",
+        "composition": "100% Seda Natural"
+      },
+      "seo": {
+        "title": "Blusa de Seda Premium | Glamour Store",
+        "description": "Blusa de seda premium com acabamento sofisticado. Parcele em até 10x.",
+        "keywords": ["blusa seda", "blusa premium", "blusa feminina"]
+      },
+      "createdAt": "2024-01-10T08:00:00Z",
+      "updatedAt": "2024-01-18T12:00:00Z"
+    },
+    {
+      "id": "prod-3",
+      "sku": "CAL-001-JEANS",
+      "name": "Calça Jeans Skinny Cintura Alta",
+      "slug": "calca-jeans-skinny-cintura-alta",
+      "description": "Calça jeans skinny com cintura alta, modelagem que valoriza o corpo. Jeans premium com elastano para maior conforto.",
+      "shortDescription": "Calça jeans skinny cintura alta",
+      "price": 159.9,
+      "priceFrom": 199.9,
+      "costPrice": 65.0,
+      "images": [
+        "https://placehold.co/800x1000/673AB7/FFFFFF?text=Calca+Jeans+1",
+        "https://placehold.co/800x1000/673AB7/FFFFFF?text=Calca+Jeans+2",
+        "https://placehold.co/800x1000/673AB7/FFFFFF?text=Calca+Jeans+3"
+      ],
+      "thumbnail": "https://placehold.co/400x500/673AB7/FFFFFF?text=Calca+Jeans",
+      "categoryId": "cat-3",
+      "categorySlug": "calcas",
+      "subcategoryId": null,
+      "brand": "Glamour Jeans",
+      "tags": ["calça", "jeans", "skinny", "cintura alta"],
+      "featured": false,
+      "isNew": false,
+      "isBestSeller": true,
+      "active": true,
+      "stock": 60,
+      "weight": 0.4,
+      "dimensions": {
+        "width": 30,
+        "height": 35,
+        "depth": 5
+      },
+      "variants": [
+        {
+          "id": "var-3-1",
+          "name": "36 - Azul Escuro",
+          "sku": "CAL-001-36-AZE",
+          "price": 159.9,
+          "stock": 12,
+          "attributes": {
+            "size": "36",
+            "color": "Azul Escuro"
+          }
+        },
+        {
+          "id": "var-3-2",
+          "name": "38 - Azul Escuro",
+          "sku": "CAL-001-38-AZE",
+          "price": 159.9,
+          "stock": 15,
+          "attributes": {
+            "size": "38",
+            "color": "Azul Escuro"
+          }
+        },
+        {
+          "id": "var-3-3",
+          "name": "40 - Azul Escuro",
+          "sku": "CAL-001-40-AZE",
+          "price": 159.9,
+          "stock": 18,
+          "attributes": {
+            "size": "40",
+            "color": "Azul Escuro"
+          }
+        },
+        {
+          "id": "var-3-4",
+          "name": "42 - Azul Escuro",
+          "sku": "CAL-001-42-AZE",
+          "price": 159.9,
+          "stock": 10,
+          "attributes": {
+            "size": "42",
+            "color": "Azul Escuro"
+          }
+        },
+        {
+          "id": "var-3-5",
+          "name": "44 - Azul Escuro",
+          "sku": "CAL-001-44-AZE",
+          "price": 159.9,
+          "stock": 5,
+          "attributes": {
+            "size": "44",
+            "color": "Azul Escuro"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["36", "38", "40", "42", "44"],
+        "colors": ["Azul Escuro"],
+        "material": "Jeans",
+        "composition": "98% Algodão, 2% Elastano"
+      },
+      "seo": {
+        "title": "Calça Jeans Skinny Cintura Alta | Glamour Store",
+        "description": "Calça jeans skinny com cintura alta. Jeans premium com elastano.",
+        "keywords": ["calça jeans", "skinny", "cintura alta"]
+      },
+      "createdAt": "2024-01-05T09:00:00Z",
+      "updatedAt": "2024-01-15T14:00:00Z"
+    },
+    {
+      "id": "prod-4",
+      "sku": "VES-002-MIDI",
+      "name": "Vestido Midi Canelado",
+      "slug": "vestido-midi-canelado",
+      "description": "Vestido midi em malha canelada, elegante e versátil. Perfeito para o dia a dia ou ocasiões casuais.",
+      "shortDescription": "Vestido midi em malha canelada",
+      "price": 179.9,
+      "priceFrom": null,
+      "costPrice": 70.0,
+      "images": [
+        "https://placehold.co/800x1000/3F51B5/FFFFFF?text=Vestido+Midi+1",
+        "https://placehold.co/800x1000/3F51B5/FFFFFF?text=Vestido+Midi+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/3F51B5/FFFFFF?text=Vestido+Midi",
+      "categoryId": "cat-1",
+      "categorySlug": "vestidos",
+      "subcategoryId": "subcat-1-2",
+      "brand": "Glamour",
+      "tags": ["vestido", "midi", "canelado", "casual"],
+      "featured": true,
+      "isNew": true,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 35,
+      "weight": 0.25,
+      "dimensions": {
+        "width": 28,
+        "height": 35,
+        "depth": 4
+      },
+      "variants": [
+        {
+          "id": "var-4-1",
+          "name": "P - Verde Militar",
+          "sku": "VES-002-P-VER",
+          "price": 179.9,
+          "stock": 8,
+          "attributes": {
+            "size": "P",
+            "color": "Verde Militar"
+          }
+        },
+        {
+          "id": "var-4-2",
+          "name": "M - Verde Militar",
+          "sku": "VES-002-M-VER",
+          "price": 179.9,
+          "stock": 10,
+          "attributes": {
+            "size": "M",
+            "color": "Verde Militar"
+          }
+        },
+        {
+          "id": "var-4-3",
+          "name": "G - Verde Militar",
+          "sku": "VES-002-G-VER",
+          "price": 179.9,
+          "stock": 7,
+          "attributes": {
+            "size": "G",
+            "color": "Verde Militar"
+          }
+        },
+        {
+          "id": "var-4-4",
+          "name": "P - Terracota",
+          "sku": "VES-002-P-TER",
+          "price": 179.9,
+          "stock": 5,
+          "attributes": {
+            "size": "P",
+            "color": "Terracota"
+          }
+        },
+        {
+          "id": "var-4-5",
+          "name": "M - Terracota",
+          "sku": "VES-002-M-TER",
+          "price": 179.9,
+          "stock": 5,
+          "attributes": {
+            "size": "M",
+            "color": "Terracota"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G"],
+        "colors": ["Verde Militar", "Terracota"],
+        "material": "Malha Canelada",
+        "composition": "95% Algodão, 5% Elastano"
+      },
+      "seo": {
+        "title": "Vestido Midi Canelado | Glamour Store",
+        "description": "Vestido midi em malha canelada, elegante e versátil.",
+        "keywords": ["vestido midi", "malha canelada", "vestido casual"]
+      },
+      "createdAt": "2024-01-18T11:00:00Z",
+      "updatedAt": "2024-01-20T16:00:00Z"
+    },
+    {
+      "id": "prod-5",
+      "sku": "CON-001-MOLETOM",
+      "name": "Conjunto Moletom Confort",
+      "slug": "conjunto-moletom-confort",
+      "description": "Conjunto de moletom super confortável, composto por blusa de capuz e calça jogger. Ideal para dias frios ou momentos de descanso.",
+      "shortDescription": "Conjunto moletom blusa + calça",
+      "price": 249.9,
+      "priceFrom": 329.9,
+      "costPrice": 100.0,
+      "images": [
+        "https://placehold.co/800x1000/2196F3/FFFFFF?text=Conjunto+1",
+        "https://placehold.co/800x1000/2196F3/FFFFFF?text=Conjunto+2",
+        "https://placehold.co/800x1000/2196F3/FFFFFF?text=Conjunto+3"
+      ],
+      "thumbnail": "https://placehold.co/400x500/2196F3/FFFFFF?text=Conjunto",
+      "categoryId": "cat-5",
+      "categorySlug": "conjuntos",
+      "subcategoryId": null,
+      "brand": "Glamour Sport",
+      "tags": ["conjunto", "moletom", "confort", "inverno"],
+      "featured": false,
+      "isNew": true,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 28,
+      "weight": 0.6,
+      "dimensions": {
+        "width": 35,
+        "height": 45,
+        "depth": 8
+      },
+      "variants": [
+        {
+          "id": "var-5-1",
+          "name": "P - Cinza Mescla",
+          "sku": "CON-001-P-CIN",
+          "price": 249.9,
+          "stock": 6,
+          "attributes": {
+            "size": "P",
+            "color": "Cinza Mescla"
+          }
+        },
+        {
+          "id": "var-5-2",
+          "name": "M - Cinza Mescla",
+          "sku": "CON-001-M-CIN",
+          "price": 249.9,
+          "stock": 8,
+          "attributes": {
+            "size": "M",
+            "color": "Cinza Mescla"
+          }
+        },
+        {
+          "id": "var-5-3",
+          "name": "G - Cinza Mescla",
+          "sku": "CON-001-G-CIN",
+          "price": 249.9,
+          "stock": 6,
+          "attributes": {
+            "size": "G",
+            "color": "Cinza Mescla"
+          }
+        },
+        {
+          "id": "var-5-4",
+          "name": "P - Preto",
+          "sku": "CON-001-P-PRE",
+          "price": 249.9,
+          "stock": 4,
+          "attributes": {
+            "size": "P",
+            "color": "Preto"
+          }
+        },
+        {
+          "id": "var-5-5",
+          "name": "M - Preto",
+          "sku": "CON-001-M-PRE",
+          "price": 249.9,
+          "stock": 4,
+          "attributes": {
+            "size": "M",
+            "color": "Preto"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G"],
+        "colors": ["Cinza Mescla", "Preto"],
+        "material": "Moletom",
+        "composition": "80% Algodão, 20% Poliéster"
+      },
+      "seo": {
+        "title": "Conjunto Moletom Confort | Glamour Store",
+        "description": "Conjunto de moletom super confortável com blusa e calça.",
+        "keywords": [
+          "conjunto moletom",
+          "moletom feminino",
+          "roupa confortável"
+        ]
+      },
+      "createdAt": "2024-01-19T10:00:00Z",
+      "updatedAt": "2024-01-20T17:00:00Z"
+    },
+    {
+      "id": "prod-6",
+      "sku": "BOL-001-COURO",
+      "name": "Bolsa de Couro Elegance",
+      "slug": "bolsa-couro-elegance",
+      "description": "Bolsa de couro sintético de alta qualidade. Design elegante e atemporal. Diversos compartimentos para organização.",
+      "shortDescription": "Bolsa de couro sintético elegante",
+      "price": 199.9,
+      "priceFrom": null,
+      "costPrice": 80.0,
+      "images": [
+        "https://placehold.co/800x1000/00BCD4/FFFFFF?text=Bolsa+1",
+        "https://placehold.co/800x1000/00BCD4/FFFFFF?text=Bolsa+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/00BCD4/FFFFFF?text=Bolsa",
+      "categoryId": "cat-6",
+      "categorySlug": "acessorios",
+      "subcategoryId": "subcat-6-1",
+      "brand": "Glamour Bags",
+      "tags": ["bolsa", "couro", "acessório", "elegante"],
+      "featured": true,
+      "isNew": false,
+      "isBestSeller": true,
+      "active": true,
+      "stock": 20,
+      "weight": 0.5,
+      "dimensions": {
+        "width": 35,
+        "height": 25,
+        "depth": 12
+      },
+      "variants": [
+        {
+          "id": "var-6-1",
+          "name": "Único - Preto",
+          "sku": "BOL-001-UN-PRE",
+          "price": 199.9,
+          "stock": 8,
+          "attributes": {
+            "size": "Único",
+            "color": "Preto"
+          }
+        },
+        {
+          "id": "var-6-2",
+          "name": "Único - Caramelo",
+          "sku": "BOL-001-UN-CAR",
+          "price": 199.9,
+          "stock": 6,
+          "attributes": {
+            "size": "Único",
+            "color": "Caramelo"
+          }
+        },
+        {
+          "id": "var-6-3",
+          "name": "Único - Nude",
+          "sku": "BOL-001-UN-NUD",
+          "price": 199.9,
+          "stock": 6,
+          "attributes": {
+            "size": "Único",
+            "color": "Nude"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["Único"],
+        "colors": ["Preto", "Caramelo", "Nude"],
+        "material": "Couro Sintético",
+        "composition": "100% Poliuretano"
+      },
+      "seo": {
+        "title": "Bolsa de Couro Elegance | Glamour Store",
+        "description": "Bolsa de couro sintético de alta qualidade com design elegante.",
+        "keywords": ["bolsa", "bolsa de couro", "acessório feminino"]
+      },
+      "createdAt": "2024-01-08T09:00:00Z",
+      "updatedAt": "2024-01-16T11:00:00Z"
+    },
+    {
+      "id": "prod-7",
+      "sku": "SAI-001-PLISSADA",
+      "name": "Saia Midi Plissada",
+      "slug": "saia-midi-plissada",
+      "description": "Saia midi plissada com cintura alta elástica. Movimento fluido e elegante. Perfeita para looks sofisticados.",
+      "shortDescription": "Saia midi plissada com cintura alta",
+      "price": 129.9,
+      "priceFrom": 169.9,
+      "costPrice": 50.0,
+      "images": [
+        "https://placehold.co/800x1000/FF9800/FFFFFF?text=Saia+1",
+        "https://placehold.co/800x1000/FF9800/FFFFFF?text=Saia+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/FF9800/FFFFFF?text=Saia",
+      "categoryId": "cat-4",
+      "categorySlug": "saias",
+      "subcategoryId": null,
+      "brand": "Glamour",
+      "tags": ["saia", "plissada", "midi", "elegante"],
+      "featured": false,
+      "isNew": false,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 22,
+      "weight": 0.2,
+      "dimensions": {
+        "width": 25,
+        "height": 30,
+        "depth": 3
+      },
+      "variants": [
+        {
+          "id": "var-7-1",
+          "name": "P - Rosa Blush",
+          "sku": "SAI-001-P-ROS",
+          "price": 129.9,
+          "stock": 6,
+          "attributes": {
+            "size": "P",
+            "color": "Rosa Blush"
+          }
+        },
+        {
+          "id": "var-7-2",
+          "name": "M - Rosa Blush",
+          "sku": "SAI-001-M-ROS",
+          "price": 129.9,
+          "stock": 8,
+          "attributes": {
+            "size": "M",
+            "color": "Rosa Blush"
+          }
+        },
+        {
+          "id": "var-7-3",
+          "name": "G - Rosa Blush",
+          "sku": "SAI-001-G-ROS",
+          "price": 129.9,
+          "stock": 4,
+          "attributes": {
+            "size": "G",
+            "color": "Rosa Blush"
+          }
+        },
+        {
+          "id": "var-7-4",
+          "name": "M - Verde Oliva",
+          "sku": "SAI-001-M-VER",
+          "price": 129.9,
+          "stock": 4,
+          "attributes": {
+            "size": "M",
+            "color": "Verde Oliva"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G"],
+        "colors": ["Rosa Blush", "Verde Oliva"],
+        "material": "Crepe",
+        "composition": "100% Poliéster"
+      },
+      "seo": {
+        "title": "Saia Midi Plissada | Glamour Store",
+        "description": "Saia midi plissada com cintura alta elástica. Movimento fluido.",
+        "keywords": ["saia midi", "saia plissada", "saia feminina"]
+      },
+      "createdAt": "2024-01-12T08:00:00Z",
+      "updatedAt": "2024-01-17T10:00:00Z"
+    },
+    {
+      "id": "prod-8",
+      "sku": "OUT-001-VEST",
+      "name": "Vestido Básico Outlet",
+      "slug": "vestido-basico-outlet",
+      "description": "Vestido básico em malha. Peça versátil para o dia a dia. Promoção especial de outlet.",
+      "shortDescription": "Vestido básico em promoção",
+      "price": 49.9,
+      "priceFrom": 99.9,
+      "costPrice": 20.0,
+      "images": [
+        "https://placehold.co/800x1000/FF5722/FFFFFF?text=Outlet+1",
+        "https://placehold.co/800x1000/FF5722/FFFFFF?text=Outlet+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/FF5722/FFFFFF?text=Outlet",
+      "categoryId": "cat-7",
+      "categorySlug": "outlet",
+      "subcategoryId": null,
+      "brand": "Glamour",
+      "tags": ["vestido", "básico", "outlet", "promoção"],
+      "featured": false,
+      "isNew": false,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 50,
+      "weight": 0.2,
+      "dimensions": {
+        "width": 25,
+        "height": 30,
+        "depth": 3
+      },
+      "variants": [
+        {
+          "id": "var-8-1",
+          "name": "P - Preto",
+          "sku": "OUT-001-P-PRE",
+          "price": 49.9,
+          "stock": 15,
+          "attributes": {
+            "size": "P",
+            "color": "Preto"
+          }
+        },
+        {
+          "id": "var-8-2",
+          "name": "M - Preto",
+          "sku": "OUT-001-M-PRE",
+          "price": 49.9,
+          "stock": 20,
+          "attributes": {
+            "size": "M",
+            "color": "Preto"
+          }
+        },
+        {
+          "id": "var-8-3",
+          "name": "G - Preto",
+          "sku": "OUT-001-G-PRE",
+          "price": 49.9,
+          "stock": 15,
+          "attributes": {
+            "size": "G",
+            "color": "Preto"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G"],
+        "colors": ["Preto"],
+        "material": "Malha",
+        "composition": "100% Algodão"
+      },
+      "seo": {
+        "title": "Vestido Básico Outlet | Glamour Store",
+        "description": "Vestido básico em malha com desconto especial de outlet.",
+        "keywords": ["vestido outlet", "vestido promoção", "vestido barato"]
+      },
+      "createdAt": "2023-12-01T10:00:00Z",
+      "updatedAt": "2024-01-10T09:00:00Z"
+    },
+    {
+      "id": "prod-9",
+      "sku": "BIJ-001-COLAR",
+      "name": "Colar Dourado Delicado",
+      "slug": "colar-dourado-delicado",
+      "description": "Colar banhado a ouro com pingente delicado. Peça atemporal que combina com diversos looks.",
+      "shortDescription": "Colar banhado a ouro",
+      "price": 79.9,
+      "priceFrom": null,
+      "costPrice": 25.0,
+      "images": [
+        "https://placehold.co/800x1000/FFC107/000000?text=Colar+1",
+        "https://placehold.co/800x1000/FFC107/000000?text=Colar+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/FFC107/000000?text=Colar",
+      "categoryId": "cat-6",
+      "categorySlug": "acessorios",
+      "subcategoryId": "subcat-6-2",
+      "brand": "Glamour Joias",
+      "tags": ["colar", "bijuteria", "dourado", "delicado"],
+      "featured": false,
+      "isNew": true,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 30,
+      "weight": 0.05,
+      "dimensions": {
+        "width": 10,
+        "height": 15,
+        "depth": 2
+      },
+      "variants": [
+        {
+          "id": "var-9-1",
+          "name": "Único - Dourado",
+          "sku": "BIJ-001-UN-DOU",
+          "price": 79.9,
+          "stock": 20,
+          "attributes": {
+            "size": "Único",
+            "color": "Dourado"
+          }
+        },
+        {
+          "id": "var-9-2",
+          "name": "Único - Prateado",
+          "sku": "BIJ-001-UN-PRA",
+          "price": 79.9,
+          "stock": 10,
+          "attributes": {
+            "size": "Único",
+            "color": "Prateado"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["Único"],
+        "colors": ["Dourado", "Prateado"],
+        "material": "Metal Banhado",
+        "composition": "Aço inoxidável banhado a ouro 18k"
+      },
+      "seo": {
+        "title": "Colar Dourado Delicado | Glamour Store",
+        "description": "Colar banhado a ouro com pingente delicado. Peça atemporal.",
+        "keywords": ["colar dourado", "bijuteria", "colar delicado"]
+      },
+      "createdAt": "2024-01-17T14:00:00Z",
+      "updatedAt": "2024-01-20T10:00:00Z"
+    },
+    {
+      "id": "prod-10",
+      "sku": "REG-001-BASICA",
+      "name": "Regata Básica Fitness",
+      "slug": "regata-basica-fitness",
+      "description": "Regata básica ideal para atividades físicas ou uso casual. Tecido leve e de secagem rápida.",
+      "shortDescription": "Regata fitness de secagem rápida",
+      "price": 59.9,
+      "priceFrom": null,
+      "costPrice": 22.0,
+      "images": [
+        "https://placehold.co/800x1000/4CAF50/FFFFFF?text=Regata+1",
+        "https://placehold.co/800x1000/4CAF50/FFFFFF?text=Regata+2"
+      ],
+      "thumbnail": "https://placehold.co/400x500/4CAF50/FFFFFF?text=Regata",
+      "categoryId": "cat-2",
+      "categorySlug": "blusas",
+      "subcategoryId": "subcat-2-2",
+      "brand": "Glamour Sport",
+      "tags": ["regata", "fitness", "básica", "esporte"],
+      "featured": false,
+      "isNew": false,
+      "isBestSeller": false,
+      "active": true,
+      "stock": 45,
+      "weight": 0.1,
+      "dimensions": {
+        "width": 20,
+        "height": 25,
+        "depth": 2
+      },
+      "variants": [
+        {
+          "id": "var-10-1",
+          "name": "P - Branco",
+          "sku": "REG-001-P-BRA",
+          "price": 59.9,
+          "stock": 10,
+          "attributes": {
+            "size": "P",
+            "color": "Branco"
+          }
+        },
+        {
+          "id": "var-10-2",
+          "name": "M - Branco",
+          "sku": "REG-001-M-BRA",
+          "price": 59.9,
+          "stock": 12,
+          "attributes": {
+            "size": "M",
+            "color": "Branco"
+          }
+        },
+        {
+          "id": "var-10-3",
+          "name": "G - Branco",
+          "sku": "REG-001-G-BRA",
+          "price": 59.9,
+          "stock": 8,
+          "attributes": {
+            "size": "G",
+            "color": "Branco"
+          }
+        },
+        {
+          "id": "var-10-4",
+          "name": "P - Preto",
+          "sku": "REG-001-P-PRE",
+          "price": 59.9,
+          "stock": 8,
+          "attributes": {
+            "size": "P",
+            "color": "Preto"
+          }
+        },
+        {
+          "id": "var-10-5",
+          "name": "M - Preto",
+          "sku": "REG-001-M-PRE",
+          "price": 59.9,
+          "stock": 7,
+          "attributes": {
+            "size": "M",
+            "color": "Preto"
+          }
+        }
+      ],
+      "attributes": {
+        "sizes": ["P", "M", "G"],
+        "colors": ["Branco", "Preto"],
+        "material": "Dry Fit",
+        "composition": "100% Poliéster"
+      },
+      "seo": {
+        "title": "Regata Básica Fitness | Glamour Store",
+        "description": "Regata básica ideal para atividades físicas. Tecido de secagem rápida.",
+        "keywords": ["regata fitness", "regata esportiva", "roupa academia"]
+      },
+      "createdAt": "2024-01-14T09:00:00Z",
+      "updatedAt": "2024-01-19T11:00:00Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cup-1",
+      "code": "BEMVINDO10",
+      "description": "10% de desconto na primeira compra",
+      "type": "percentage",
+      "value": 10,
+      "minValue": 100,
+      "maxDiscount": 50,
+      "usageLimit": 1000,
+      "usageCount": 245,
+      "userLimit": 1,
+      "startDate": "2024-01-01T00:00:00Z",
+      "endDate": "2024-12-31T23:59:59Z",
+      "active": true,
+      "categories": [],
+      "products": []
+    },
+    {
+      "id": "cup-2",
+      "code": "FRETEGRATIS",
+      "description": "Frete grátis em qualquer compra",
+      "type": "free_shipping",
+      "value": 0,
+      "minValue": 150,
+      "maxDiscount": null,
+      "usageLimit": 500,
+      "usageCount": 120,
+      "userLimit": 2,
+      "startDate": "2024-01-01T00:00:00Z",
+      "endDate": "2024-06-30T23:59:59Z",
+      "active": true,
+      "categories": [],
+      "products": []
+    },
+    {
+      "id": "cup-3",
+      "code": "OUTLET20",
+      "description": "20% extra no outlet",
+      "type": "percentage",
+      "value": 20,
+      "minValue": 0,
+      "maxDiscount": 100,
+      "usageLimit": 200,
+      "usageCount": 45,
+      "userLimit": 3,
+      "startDate": "2024-01-01T00:00:00Z",
+      "endDate": "2024-03-31T23:59:59Z",
+      "active": true,
+      "categories": ["cat-7"],
+      "products": []
+    }
+  ],
+  "pages": [
+    {
+      "id": "page-1",
+      "title": "Sobre Nós",
+      "slug": "sobre",
+      "content": "<h1>Sobre a Glamour Store</h1><p>Somos uma loja de moda feminina focada em oferecer as melhores tendências com qualidade e preços acessíveis.</p><p>Nossa missão é fazer você se sentir confiante e elegante em todas as ocasiões.</p>",
+      "seo": {
+        "title": "Sobre Nós | Glamour Store",
+        "description": "Conheça a Glamour Store, sua loja de moda feminina."
+      },
+      "active": true
+    },
+    {
+      "id": "page-2",
+      "title": "Política de Privacidade",
+      "slug": "privacidade",
+      "content": "<h1>Política de Privacidade</h1><p>Sua privacidade é importante para nós. Esta política explica como coletamos, usamos e protegemos seus dados pessoais.</p>",
+      "seo": {
+        "title": "Política de Privacidade | Glamour Store",
+        "description": "Leia nossa política de privacidade e saiba como protegemos seus dados."
+      },
+      "active": true
+    },
+    {
+      "id": "page-3",
+      "title": "Trocas e Devoluções",
+      "slug": "trocas",
+      "content": "<h1>Trocas e Devoluções</h1><p>Você tem até 30 dias para trocar ou devolver seu produto. O item deve estar com etiquetas e em perfeitas condições.</p>",
+      "seo": {
+        "title": "Trocas e Devoluções | Glamour Store",
+        "description": "Saiba como trocar ou devolver produtos na Glamour Store."
+      },
+      "active": true
+    },
+    {
+      "id": "page-4",
+      "title": "Formas de Pagamento",
+      "slug": "pagamento",
+      "content": "<h1>Formas de Pagamento</h1><p>Aceitamos cartões de crédito, débito, Pix e boleto bancário. Parcele em até 10x sem juros!</p>",
+      "seo": {
+        "title": "Formas de Pagamento | Glamour Store",
+        "description": "Conheça as formas de pagamento aceitas na Glamour Store."
+      },
+      "active": true
+    },
+    {
+      "id": "page-5",
+      "title": "Fale Conosco",
+      "slug": "contato",
+      "content": "<h1>Fale Conosco</h1><p>Entre em contato através do nosso e-mail contato@glamourstore.com.br ou WhatsApp (11) 99999-9999.</p>",
+      "seo": {
+        "title": "Fale Conosco | Glamour Store",
+        "description": "Entre em contato com a Glamour Store."
+      },
+      "active": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-2024-001",
+      "number": "#100234",
+      "status": "delivered",
+      "statusLabel": "Entregue",
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-01-20T14:25:00Z",
+      "subtotal": 459.8,
+      "shipping": 0,
+      "discount": 45.98,
+      "total": 413.82,
+      "paymentMethod": "credit_card",
+      "paymentMethodLabel": "Cartao de Credito",
+      "installments": 3,
+      "items": [
+        {
+          "id": "item-1",
+          "productId": "prod-1",
+          "name": "Vestido Floral Midi",
+          "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=100&h=100&fit=crop",
+          "variant": "M / Rosa",
+          "quantity": 1,
+          "price": 259.9,
+          "total": 259.9
+        },
+        {
+          "id": "item-2",
+          "productId": "prod-2",
+          "name": "Blusa Cropped Canelada",
+          "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=100&h=100&fit=crop",
+          "variant": "P / Branco",
+          "quantity": 2,
+          "price": 99.9,
+          "total": 199.8
+        }
+      ],
+      "shippingAddress": {
+        "name": "Maria Silva",
+        "street": "Rua das Flores, 123",
+        "number": "123",
+        "complement": "Apto 45",
+        "neighborhood": "Jardim Paulista",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "zipCode": "01410-000"
+      },
+      "tracking": {
+        "code": "BR123456789BR",
+        "carrier": "Correios",
+        "url": "https://rastreamento.correios.com.br/app/index.php",
+        "history": [
+          {
+            "date": "2024-01-20T14:25:00Z",
+            "status": "delivered",
+            "description": "Objeto entregue ao destinatario",
+            "location": "Sao Paulo - SP"
+          },
+          {
+            "date": "2024-01-20T08:15:00Z",
+            "status": "out_for_delivery",
+            "description": "Objeto saiu para entrega ao destinatario",
+            "location": "Sao Paulo - SP"
+          },
+          {
+            "date": "2024-01-19T16:30:00Z",
+            "status": "in_transit",
+            "description": "Objeto em transferencia - por favor aguarde",
+            "location": "Barueri - SP"
+          },
+          {
+            "date": "2024-01-17T10:00:00Z",
+            "status": "in_transit",
+            "description": "Objeto postado",
+            "location": "Osasco - SP"
+          },
+          {
+            "date": "2024-01-16T18:45:00Z",
+            "status": "processing",
+            "description": "Objeto coletado na unidade dos Correios",
+            "location": "Osasco - SP"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ORD-2024-002",
+      "number": "#100235",
+      "status": "shipped",
+      "statusLabel": "Enviado",
+      "createdAt": "2024-01-22T15:45:00Z",
+      "updatedAt": "2024-01-24T09:30:00Z",
+      "subtotal": 189.9,
+      "shipping": 19.9,
+      "discount": 0,
+      "total": 209.8,
+      "paymentMethod": "pix",
+      "paymentMethodLabel": "Pix",
+      "installments": null,
+      "items": [
+        {
+          "id": "item-3",
+          "productId": "prod-4",
+          "name": "Saia Midi Plissada",
+          "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=100&h=100&fit=crop",
+          "variant": "M / Preto",
+          "quantity": 1,
+          "price": 189.9,
+          "total": 189.9
+        }
+      ],
+      "shippingAddress": {
+        "name": "Maria Silva",
+        "street": "Rua das Flores, 123",
+        "number": "123",
+        "complement": "Apto 45",
+        "neighborhood": "Jardim Paulista",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "zipCode": "01410-000"
+      },
+      "tracking": {
+        "code": "BR987654321BR",
+        "carrier": "Correios",
+        "url": "https://rastreamento.correios.com.br/app/index.php",
+        "history": [
+          {
+            "date": "2024-01-24T09:30:00Z",
+            "status": "in_transit",
+            "description": "Objeto em transferencia - por favor aguarde",
+            "location": "Campinas - SP"
+          },
+          {
+            "date": "2024-01-23T14:20:00Z",
+            "status": "in_transit",
+            "description": "Objeto postado",
+            "location": "Osasco - SP"
+          },
+          {
+            "date": "2024-01-22T18:00:00Z",
+            "status": "processing",
+            "description": "Objeto coletado na unidade dos Correios",
+            "location": "Osasco - SP"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ORD-2024-003",
+      "number": "#100236",
+      "status": "processing",
+      "statusLabel": "Preparando",
+      "createdAt": "2024-01-25T11:20:00Z",
+      "updatedAt": "2024-01-25T11:20:00Z",
+      "subtotal": 529.7,
+      "shipping": 0,
+      "discount": 52.97,
+      "total": 476.73,
+      "paymentMethod": "credit_card",
+      "paymentMethodLabel": "Cartao de Credito",
+      "installments": 6,
+      "items": [
+        {
+          "id": "item-4",
+          "productId": "prod-5",
+          "name": "Blazer Oversized",
+          "image": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=100&h=100&fit=crop",
+          "variant": "G / Bege",
+          "quantity": 1,
+          "price": 349.9,
+          "total": 349.9
+        },
+        {
+          "id": "item-5",
+          "productId": "prod-3",
+          "name": "Calca Pantalona",
+          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=100&h=100&fit=crop",
+          "variant": "M / Preto",
+          "quantity": 1,
+          "price": 179.9,
+          "total": 179.9
+        }
+      ],
+      "shippingAddress": {
+        "name": "Maria Silva",
+        "street": "Av. Brasil, 500",
+        "number": "500",
+        "complement": "",
+        "neighborhood": "Centro",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "zipCode": "20040-020"
+      },
+      "tracking": null
+    },
+    {
+      "id": "ORD-2024-004",
+      "number": "#100237",
+      "status": "cancelled",
+      "statusLabel": "Cancelado",
+      "createdAt": "2024-01-10T09:00:00Z",
+      "updatedAt": "2024-01-10T15:30:00Z",
+      "subtotal": 99.9,
+      "shipping": 15.9,
+      "discount": 0,
+      "total": 115.8,
+      "paymentMethod": "boleto",
+      "paymentMethodLabel": "Boleto Bancario",
+      "installments": null,
+      "cancelReason": "Pagamento nao confirmado",
+      "items": [
+        {
+          "id": "item-6",
+          "productId": "prod-2",
+          "name": "Blusa Cropped Canelada",
+          "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=100&h=100&fit=crop",
+          "variant": "M / Rosa",
+          "quantity": 1,
+          "price": 99.9,
+          "total": 99.9
+        }
+      ],
+      "shippingAddress": {
+        "name": "Maria Silva",
+        "street": "Rua das Flores, 123",
+        "number": "123",
+        "complement": "Apto 45",
+        "neighborhood": "Jardim Paulista",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "zipCode": "01410-000"
+      },
+      "tracking": null
+    }
+  ]
+}
