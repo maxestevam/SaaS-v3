@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "saas-v3",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-03",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lojadescomplicada-store",
+      "database_id": "7f324775-3075-434a-9f58-5b25de1df6de"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BACKUP_BUCKET",
+      "bucket_name": "lojas"
+    },
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "cdn-store"
+    }
+  ]
+}
